@@ -1,0 +1,14 @@
+#!/bin/bash
+
+no_days=640
+
+year=`expr $no_days / 365`
+
+month=$[$[$no_days % 365] / 30]
+
+week=$[$[$[$no_days % 365] % 30] / 7]
+
+days=$[$[$[$no_days % 365] % 30] % 7]
+echo ""
+echo "Year----Month----Week----Days"
+echo -e $year"----"$month"----"$week"----"$days

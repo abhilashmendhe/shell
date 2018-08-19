@@ -1,0 +1,8 @@
+#!/bin/bash
+
+a=123
+b=88
+
+c=$(echo "$a % $b" | bc)
+
+echo $c

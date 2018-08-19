@@ -1,0 +1,11 @@
+#!/bin/bash
+
+no_sec=3500
+
+hr=$[$no_sec / 3600]
+min=$[$[$no_sec % 3600] / 60]
+sec=$[$[$[$no_sec % 3600] % 60] / 60]
+
+echo "Hours:" $hr
+echo "Minutes:" $min
+echo "Seconds:" $sec

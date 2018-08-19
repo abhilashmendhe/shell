@@ -1,0 +1,19 @@
+#!/bin/bash
+
+no_milli=10
+
+meters=$[no_milli / 1000]
+
+feets=$[$[no_milli % 1000] / 300]
+
+inches=$[$[$[no_milli % 1000] % 300] / 25]
+
+centimeter=$[$[$[$[$no_milli % 1000] % 300] % 25] / 10]
+
+echo ""
+echo ""
+
+echo "Meters: "$meters
+echo "Feets: "$feets
+echo "Inches: "$inches
+echo "Centimeter: "$centimeter

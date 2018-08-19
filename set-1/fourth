@@ -1,0 +1,12 @@
+#!/bin/bash
+
+a=89
+b=18
+
+c=$(bc << EOF
+scale=4
+$a / $b
+EOF
+)
+
+echo $c

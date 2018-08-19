@@ -1,0 +1,17 @@
+#!/bin/bash
+
+a=18
+b=131
+
+
+echo "Before swapping a is" $a
+echo "Before swapping b is" $b
+
+tmp=$a
+a=$b
+b=$tmp
+
+echo ""
+
+echo "After swapping a is" $a
+echo "After swapping b is" $b

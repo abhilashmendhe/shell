@@ -1,0 +1,17 @@
+#!/bin/bash
+
+a=5000
+b=1223
+
+
+echo "Before swapping a is" $a
+echo "Before swapping b is" $b
+
+a=$[$a + $b]
+b=$[$a - $b]
+a=$[$a - $b]
+
+echo ""
+
+echo "Before swapping a is" $a
+echo "Before swapping b is" $b
